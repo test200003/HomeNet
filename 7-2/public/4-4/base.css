@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+strong.more {
+  color: #c30
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+.box1 {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+.box1 p {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
+.top {
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.top img {
+  width: 100%;
+  height: 100vh;
+}
+.top-text {
+  font-size: 64px;
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 8%;
+}
+.top-text p {
+  font-weight: bold;
+  line-height: 70px;
+  opacity: 0.8;
+}
+/*cafe*/
+.cafe-info {
+  display: flex;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.info {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  padding: 10px;
+}
+.info-img {
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+}
+
+.info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.info-text {
+  padding-top: 15px;
+}
+.info-text p{
+  font-weight: bold;
+  font-size: 15px;
+}
+/*location*/
+.cafe-location {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.location-title {
+  padding-top: 50px;
+  padding-left: 70px;
+}
+.location-title p {
+  font-size: 34px;
+  font-weight: bold;
+}
+.location {
+  margin: auto;
+}
+.location-img {
+  padding: 20px;
+}
+.location-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.location-text {
+  padding-left: 30px;
+}
+.location-text p{
+  font-weight: bold;
+}
+/*goto*/
+.goto-img {
+  padding: 50px;
+}
+.goto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+.goto-box {
+background-color: white;
+opacity: 0.5;
+position: absolute;
+top: 210%;
+left: 8%;
+padding: 10px;
+}
+.goto-title p{
+  font-size: 44px;
+  font-weight: bold;
+}
+.goto-text p{
+font-size: 18px;
+}
+/*exp*/
+.cafe-box {
+  background-color: black;
+}
+.cafe-exp {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.exp {
+  margin: auto;
+}
+.exp-img {
+  padding: 20px;
+}
+.exp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+.exp-text1 {
+  color: white;
+  padding-left: 60px;
+}
+.exp-text2 {
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  line-height: 15px;
+}
+.exp-title {
+  color: white;
+  font-size: 36px;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+.exp-text2 p {
+  font-weight: bold;
+  font-size: 20px;
+}
+/*host*/
+.host-title {
+  font-size: 36px;
+  padding-left: 60px;
+  padding-top: 30px;
+}
+.cafe-host {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.host-img {
+  padding: 20px;
+}
+.host-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.9;
+}
+.host-text {
+  padding-left: 20px;
+  padding-bottom: 50px;
+}
+.host-text p {
+  font-weight: bold;
+}
+/*button*/
+#button {
+  position: absolute;
+  opacity: 0;
+  transition: .9s;
+  right: 0;
+  transform: translateY(50px);
+}
+#button.jump {
+  opacity: 1;
+  position: fixed;
+  bottom: 0;
+  transform: translateY(0);
+  z-index: 100;
+  transition: .9s;
+}
+
+.jump_button {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  font-size: 130%;
+  margin: 0;
+  border-radius: 0px;
+}
+@media screen and (max-device-width:896px),(max-width:896px) {
+* {
+  float: none;
+  position: static;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.cafe-info {
+  grid-template-columns: repeat(2, 1fr)
+}
+.cafe-location {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+.goto-box {
+  top: 260%;
+  position: absolute;
+}
+.goto-img {
+  position: absolute;
+  top: 270%;
+}
+.cafe-box {
+  position: absolute;
+  top: 310%;
+}
+.host-title {
+  position: absolute;
+  top: 370%;
+}
+.cafe-host {
+  position: absolute;
+  top: 380%;
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+strong.more {
+  color: #c30
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 200;
+
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 0.5s;
+}
+.login.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.login-menu {
+  width: 45%;
+  height: 80%;
+  margin: auto;
+  margin-top: 70px;
+  background-color: white;
+  border-radius: 12px;
+
+}
+.login-title {
+  padding-top: 20px;
+}
+.login-title p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+  margin-bottom: 15px;
+}
+.login-box {
+  text-align: center;
+  padding-top: 10px;
+}
+input {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid #aaa;
+}
+button {
+  color: white;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(215, 4, 102);
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.logo {
+  width: 90%;
+  height: 50px;
+  border: 1px solid rgba(192, 192, 192);
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.logo img {
+  width: 25px;
+  margin: auto;
+  padding-top: 10px;
+  cursor: pointer;
+}

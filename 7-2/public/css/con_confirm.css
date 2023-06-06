@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+strong.more {
+  color: #c30
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.confirm {
+  position: relative;
+  padding-top: 100px;
+}
+
+.confirm-box {
+  width: 60%;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.confirm-title p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+  margin-bottom: 15px;
+}
+
+.confirm-text {
+  padding-left: 15px;
+}
+
+.confirm-list {
+  padding-left: 15px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.confirm-list h1 {
+  border-bottom: 1px solid #ccc;
+}
+
+.confirm-list p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  word-break: break-all;
+  line-height: 5px;
+}
+
+.confirm-con {
+  font-size: 19px;
+  padding-left: 15px;
+}
+
+.confirm-button {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.jump-complete {
+  color: white;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: wheat;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin: 20px;
+}
+
+.back-contact {
+  color: #066;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 2px solid #066;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  background-color: transparent;
+  margin: 20px;
+  margin-right: 15px;
+}
+.username {
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  font-size: 24px;
+}
